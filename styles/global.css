@@ -1,0 +1,80 @@
+/* Apply a gradient background to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Make sure all elements use border-box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+/* Style the navigation menu */
+nav ul {
+    display: flex;
+    justify-content: center;  /* Centers links horizontally */
+    gap: 20px;  /* Adds space between items */
+    list-style: none; /* Removes bullets */
+    padding: 0;
+}
+
+
+/* aaaaa /*
+
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: white; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+/* Style the call-to-action button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* X-offset	Moves shadow left/right
+Y-offset	Moves shadow up/down
+    Blur	Softens the edges
+    Spread	Increases overall size */
+
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    transform: scale(1.05); /* Slight pop effect */
+}

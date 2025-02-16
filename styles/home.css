@@ -1,0 +1,71 @@
+/* 🌟 Hero Section */
+
+
+
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: white; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    max-width: 600px;
+    margin: 50px auto;
+    transition: transform 0.3s ease-in-out;
+    
+    /* Add the animation property: */
+    animation: fadeInUp 1s ease-out forwards; /* fadeInUp = defined anim, 1s = dur,
+    ease- out = makes the animation start quickly and then slow down,
+    forward =  ensures that after the animation completes, the element stays in its final state */
+}
+
+
+.hero:hover {
+    transform: scale(1.05);
+}
+
+/* 🌟 Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #e68900;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;  /* Center items */
+    }
+
+    .hero {
+        padding: 40px 20px;  /* More padding for better spacing */
+    }
+
+    h1 {
+        font-size: 1.8rem;  /* Slightly smaller for mobile */
+    }
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;              /* Start fully transparent */
+        transform: translateY(20px); /* Start 20px lower */
+    }
+    to {
+        opacity: 1;              /* End fully visible */
+        transform: translateY(0);   /* End at the original position */
+}
+}
