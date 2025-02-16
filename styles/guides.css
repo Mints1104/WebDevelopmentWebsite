@@ -1,0 +1,62 @@
+   /* Basic reset */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    padding: 20px;
+  }
+  /* Tabs container styling */
+  .tabs {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  /* Each tab block */
+  .tab {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .tab:last-child {
+    border-bottom: none;
+  }
+  /* Hide radio buttons */
+  .tab input[type="radio"] {
+    display: none;
+  }
+  /* Style tab labels */
+  .tab label {
+    display: block;
+    padding: 15px 20px;
+    background: #f0f0f0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  /* Active tab label style */
+  .tab input[type="radio"]:checked + label {
+    background: #fff;
+    color: #000;
+    border-bottom: 2px solid #fff;
+  }
+  /* Hide tab content by default */
+  .tab .tab-content {
+    display: none;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-in;
+  }
+  /* Show tab content when its radio button is checked */
+  .tab input[type="radio"]:checked ~ .tab-content {
+    display: block;
+  }
+  /* Fade-in animation for content */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
