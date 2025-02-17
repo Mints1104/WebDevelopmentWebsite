@@ -2,39 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stylish Tabs Example</title>
+  <title>HTML Guide - Web Dev Cheat Sheet</title>
   <link rel="stylesheet" href="styles/guides.css">
-
+  <link rel="stylesheet" href="styles/global.css">
 </head>
 <body>
-  <div class="tabs">
-    <!-- Tab 1 -->
-    <div class="tab">
-      <input type="radio" id="tab1" name="tabs" checked>
-      <label for="tab1">Tab 1</label>
-      <div class="tab-content">
-        <h2>Tab 1 Content</h2>
-        <p>This is the content for Tab 1. Here, you can put any information you'd like.</p>
+  <header>
+    <h1>Web Dev Cheat Sheet</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="css-guide.html">CSS Guide</a></li>
+        <li><a href="playground.html">Playground</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="tabs">
+      <!-- Tab 1: HTML Basics -->
+      <div class="tab">
+        <input type="radio" id="htmlTab1" name="htmlTabs" checked>
+        <label for="htmlTab1">HTML Basics</label>
+        <div class="tab-content">
+          <h2>HTML Basics</h2>
+          <p><strong>HTML</strong> (HyperText Markup Language) is the standard language for creating web pages. It structures the content and tells the browser what to display.</p>
+          <p><strong>Key Elements:</strong></p>
+          <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> – Declares the document type (HTML5).</li>
+            <li><code>&lt;html&gt;</code> – The root element.</li>
+            <li><code>&lt;head&gt;</code> – Contains meta-information, like the page title and links to CSS files.</li>
+            <li><code>&lt;body&gt;</code> – Holds the visible content.</li>
+          </ul>
+          <p><strong>Example Structure:</strong></p>
+          <pre class="code-sample">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a basic HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </pre>
+        </div>
+      </div>
+      <!-- Tab 2: HTML Forms -->
+      <div class="tab">
+        <input type="radio" id="htmlTab2" name="htmlTabs">
+        <label for="htmlTab2">HTML Forms</label>
+        <div class="tab-content">
+          <h2>HTML Forms</h2>
+          <p>Forms allow you to collect user input through various elements:</p>
+          <ul>
+            <li><code>&lt;form&gt;</code> – The container for form elements.</li>
+            <li><code>&lt;input&gt;</code> – For text, email, passwords, etc.</li>
+            <li><code>&lt;textarea&gt;</code> – For multi-line text input.</li>
+            <li><code>&lt;button&gt;</code> – For form submission or actions.</li>
+            <li><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> – For dropdown menus.</li>
+          </ul>
+          <p><strong>Simple Form Example:</strong></p>
+          <pre class="code-sample">
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+          </pre>
+        </div>
+      </div>
+      <!-- Tab 3: Semantic HTML -->
+      <div class="tab">
+        <input type="radio" id="htmlTab3" name="htmlTabs">
+        <label for="htmlTab3">Semantic HTML</label>
+        <div class="tab-content">
+          <h2>Semantic HTML</h2>
+          <p>Semantic elements provide meaning to your content, improving accessibility and SEO.</p>
+          <p><strong>Common Semantic Elements:</strong></p>
+          <ul>
+            <li><code>&lt;header&gt;</code> – Contains introductory content or navigation.</li>
+            <li><code>&lt;nav&gt;</code> – Contains navigational links.</li>
+            <li><code>&lt;main&gt;</code> – The primary content of a document.</li>
+            <li><code>&lt;article&gt;</code> – A self-contained piece of content.</li>
+            <li><code>&lt;footer&gt;</code> – Contains footer information.</li>
+          </ul>
+          <p>Using semantic HTML helps browsers and assistive technologies understand your content structure better.</p>
+        </div>
       </div>
     </div>
-    <!-- Tab 2 -->
-    <div class="tab">
-      <input type="radio" id="tab2" name="tabs">
-      <label for="tab2">Tab 2</label>
-      <div class="tab-content">
-        <h2>Tab 2 Content</h2>
-        <p>This is the content for Tab 2. It appears when you click on Tab 2.</p>
-      </div>
-    </div>
-    <!-- Tab 3 -->
-    <div class="tab">
-      <input type="radio" id="tab3" name="tabs">
-      <label for="tab3">Tab 3</label>
-      <div class="tab-content">
-        <h2>Tab 3 Content</h2>
-        <p>This is the content for Tab 3. This is another section you can use.</p>
-      </div>
-    </div>
-  </div>
+  </main>
 </body>
 </html>

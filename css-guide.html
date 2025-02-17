@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Guide - Web Dev Cheat Sheet</title>
+  <link rel="stylesheet" href="styles/guides.css">
+  <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+  <header>
+    <h1>Web Dev Cheat Sheet</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html-guide.html">HTML Guide</a></li>
+        <li><a href="playground.html">Playground</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="tabs">
+      <!-- Tab 1: CSS Basics -->
+      <div class="tab">
+        <input type="radio" id="cssTab1" name="cssTabs" checked>
+        <label for="cssTab1">CSS Basics</label>
+        <div class="tab-content">
+          <h2>CSS Basics</h2>
+          <p><strong>CSS</strong> (Cascading Style Sheets) is used to style HTML elements. Its syntax consists of a selector and a declaration block.</p>
+          <p>For example:</p>
+          <pre class="code-sample">
+selector {
+  property: value;
+}
+          </pre>
+          <p>This tells the browser which elements to style and how.</p>
+          <p>Additional example:</p>
+          <pre class="code-sample">
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+          </pre>
+        </div>
+      </div>
+      <!-- Tab 2: Layout & Box Model -->
+      <div class="tab">
+        <input type="radio" id="cssTab2" name="cssTabs">
+        <label for="cssTab2">Layout &amp; Box Model</label>
+        <div class="tab-content">
+          <h2>Layout &amp; Box Model</h2>
+          <p>The <strong>box model</strong> represents every element as a box with:</p>
+          <ul>
+            <li><strong>Content:</strong> The actual content.</li>
+            <li><strong>Padding:</strong> Space between content and border.</li>
+            <li><strong>Border:</strong> The edge around the padding.</li>
+            <li><strong>Margin:</strong> Space outside the border.</li>
+          </ul>
+          <p>For example:</p>
+          <pre class="code-sample">
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #000;
+  margin: 10px;
+}
+          </pre>
+          <p>Also, setting <code>box-sizing: border-box;</code> ensures that padding and border are included within the set width:</p>
+          <pre class="code-sample">
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #000;
+  box-sizing: border-box;
+}
+          </pre>
+        </div>
+      </div>
+      <!-- Tab 3: Transitions & Animations -->
+      <div class="tab">
+        <input type="radio" id="cssTab3" name="cssTabs">
+        <label for="cssTab3">Transitions &amp; Animations</label>
+        <div class="tab-content">
+          <h2>Transitions &amp; Animations</h2>
+          <p><strong>Transitions</strong> allow smooth changes between property values. For instance:</p>
+          <pre class="code-sample">
+button {
+  transition: background 0.3s ease;
+}
+          </pre>
+          <p>This changes the background color smoothly when the button is hovered.</p>
+          <p><strong>Animations</strong> use keyframes to define style changes over time. For example:</p>
+          <pre class="code-sample">
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+          </pre>
+          <p>You can apply this to elements to animate them on load:</p>
+          <pre class="code-sample">
+.element {
+  animation: fadeIn 0.5s ease-in-out;
+}
+          </pre>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
