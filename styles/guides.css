@@ -1,4 +1,6 @@
-/* Basic reset */
+/* Guides Page Styles */
+
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
   line-height: 1.6;
 }
 
-/* Tabs container styling */
+/* Tabs Container */
 .tabs {
   max-width: 700px;
   margin: 40px auto;
@@ -23,21 +25,23 @@ body {
   overflow: hidden;
 }
 
-/* Each tab block */
+/* Each Tab Block */
 .tab {
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 10px; /* Add space between tabs */
+  margin-bottom: 10px;
 }
+
 .tab:last-child {
   border-bottom: none;
 }
 
-/* Hide radio buttons */
+/* Hide Radio Buttons */
 .tab input[type="radio"] {
   display: none;
 }
 
-/* Style tab labels */
+
+/* Tab Labels */
 .tab label {
   display: block;
   padding: 15px 20px;
@@ -49,14 +53,15 @@ body {
   margin-bottom: 5px;
 }
 
-/* Active tab label style */
+/* Active Tab Label */
 .tab input[type="radio"]:checked + label {
   background: #fff;
   color: #000;
   border-bottom: 2px solid #fff;
 }
 
-/* Tab content styling */
+/* Tab Content */
+
 .tab .tab-content {
   display: none;
   padding: 20px;
@@ -65,12 +70,12 @@ body {
   margin-top: 10px;
 }
 
-/* Show tab content when its radio button is checked */
+/* Show Active Tab Content */
 .tab input[type="radio"]:checked ~ .tab-content {
   display: block;
 }
 
-/* Code sample styling for better separation */
+/* Code Sample Styling */
 .code-sample {
   background: #f0f0f0;
   padding: 10px;
@@ -82,7 +87,7 @@ body {
   border-radius: 4px;
 }
 
-/* Fade-in animation for content */
+/* Fade-in Animation */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
