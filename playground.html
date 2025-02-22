@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground - Web Dev Cheat Sheet</title>
+    <link rel="stylesheet" href="styles/playground.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Playground</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html-guide.html">HTML Guide</a></li>
+          <li><a href="css-guide.html">CSS Guide</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <section class="playground-container">
+        <textarea
+          id="codeInput"
+          placeholder="Enter HTML/CSS code here..."
+        ></textarea>
+        <button id="runButton">Run Code</button>
+        <!--Iframe stands for inlne frame which allows you to embed another webpage within the current webpage-->
+        <iframe id="preview" title="Live Preview"></iframe>
+      </section>
+    </main>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/playground.js"></script>
+  </body>
+</html>

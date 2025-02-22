@@ -67,3 +67,17 @@
       transform: translateY(0);
     }
   }
+  /* ---------------- Dark Mode Overrides for Home Page ---------------- */
+
+  body.dark-mode .hero {
+    background: #333;
+    color: #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  body.dark-mode .cta-button {
+    background: #ff6b6b;
+  }
+
+  body.dark-mode .cta-button:hover {
+    background: #e68900;
+  }
